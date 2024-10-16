@@ -1,8 +1,13 @@
 import matplotlib.pyplot as plt
+plt.style.available
 
+input_values = [1,2,3,4,5]
 squares = [1,4,9,16,25]
 
+plt.style.use('seaboarn')
+
 fig, ax = plt.subplots()
+ax.plot(input_values,squares,linewidth=3)
 ax.plot(squares, linewidth=3)
 
 #Define o Título do gráfico e os eixos do rótulo
